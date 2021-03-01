@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Roboto:wght@100&display=swap');
+
+body{
+    margin: 0;
+    background-color: #FFFBFB;
+    padding: 0%;
+    font-family: 'Catamaran';
+}
+
+.nav{
+    position: fixed;
+    margin-top: 0%;
+    width: 100%;
+    height: 80px;
+    background: #193E4C;  
+    top: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.nav h1{
+    color: #ffffff;
+}
+.navLinks{
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 10cm;
+}
+
+.link{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.upper{
+
+    position: absolute;
+    width: 450px;
+    height: 124px;
+    left: 38%;
+    top: 20%;
+
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    text-align: center;
+
+color: #000000;
+}
+
+
+.btnIndex{
+    font-family: Roboto;
+    width: 126px;
+    height: 40px;
+    background-color: #4182CF;
+    border: 0px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btnIndex:hover{
+    cursor: pointer;
+    background-color: #5099EF;
+}
+
+.btnIndex2{
+    width: 286px;
+    min-height: 33px;
+    padding: 10px 50px 10px 50px;
+    color: #ffffff;
+    border: none;
+    background-color: #4182CF;
+    font-family: 'Roboto';
+    font-weight: bold;
+    text-decoration: none;
+}
+.btnIndex2:hover{
+    cursor: pointer;
+    background-color: #5099EF;
+}
+
+.loginContainer{
+    margin: auto;
+    margin-top: 100px;
+    width: 434px;
+    min-height: 409px;
+    left: 463px;
+    top: 120px;
+    border-radius: 20px;
+    background-color: #EEF3F3;
+}
+.loginHeader{
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 82px;
+    text-align: center;
+    color: #193E4C;
+    margin-top: 20px;
+}
+.formClass{
+    padding: 0px 20px 0px 20px ;
+}
+.formClass label{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 43px;
+    color: #193E4C;
+    align-self: center;
+}
+
+.form-control{
+    width: 369.09px;
+    height: 35.12px;
+    background: #FFFCFC;
+    border: none;
+    border: 0;
+    padding: 0 10px 0 10px;
+    color: #193E4C;
+}
+
+.btnLogin{
+    margin-top: 70px;
+    width: 389.09px;
+    height: 35.12px;
+    background: #193E4C;
+    border: none;
+    border: 0;
+    padding: 0 10px 0 10px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btnLogin:hover{
+    cursor: pointer;
+    background-color: #1d4959;
+}
+
+.container{
+    left: 58px;
+    top: 177px;
+    padding: 100px;
+}
+
+.useTitle{
+    background: #649C9C;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 30px;
+}
+
+.useTitleHeader{
+    color: #FFFFFF;
+}
+.btnAdd{
+    background: #EEF3F3;
+    width: 170px;
+    height: 50px;
+    border: 0;
+    margin: 20px;
+    color: #193E4C;
+    font-weight: bold;
+    font-size: 18px;
+}
+.btnAdd:hover{
+    background: #cfd1d1;
+    cursor: pointer;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.tableHeader{
+    background: #C4C4C4;
+    height: 60px;
+    font-weight: bolder;
+}
+
+table tbody tr{
+    border-bottom: 1px solid #000;
+    height: 40px;
+}
+table tbody tr td{
+    text-align: center;
+    font-weight: bold;
+}
+.navLink{
+    margin-right: 30px;
+    display: flex;
+
+}

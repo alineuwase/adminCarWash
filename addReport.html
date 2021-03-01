@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Report</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script>
+        if(localStorage.getItem('token') === null){
+            window.location.href='./login.html'
+        }
+    </script>
+</head>
+<body>
+    <div class="nav">
+        <h1>Admin Dashboard</h1>
+        <div class="navLinks">
+            <div class="navLinks">
+                <div><a href="service.html" class="link">Services</a></div>
+                <div><a href="bookings.html" class="link">Bookings</a></div>
+                <div><a href="report.html" class="link">Reports</a></div>
+                <div><a href="user.html" class="link">Users</a></div>
+                <div><a href="#" onclick="actionLogout()" class="link">Logout</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loginContainer">
+        <h1 class="loginHeader" style="margin-bottom: 0px;">Add Report</h1>
+
+        <div class="formClass">
+            <label>Car ID:</label>
+            <input type="text" id="carId" class="form-control" required>  
+            <label>Car Mark:</label>
+            <input type="text" id="carMark" class="form-control" required>
+            <label>Car Status:</label>
+            <select id="carStatus" class="form-control" style="width: 98.6%;" required>
+                <option class="selectOption" selected disabled></option>
+                <option class="selectOption" value="Washed">Washed</option>
+                <option class="selectOption" value="Pending">Pending</option>
+            </select>
+            <label>Washer Name:</label>
+            <input type="text" id="washerName" class="form-control" required>
+            <button class="btnLogin" style="margin-top: 20px; margin-bottom: 15px;" onclick="actionAddReport()">Add</button>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
