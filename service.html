@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <script>
         if(localStorage.getItem('token') === null){
             window.location.href='./login.html'
@@ -35,6 +36,7 @@
                     <th>Service Id</th>
                     <th>Service Name</th>
                     <th>Price</th>
+                    <th>Delete</th>
                 </tr>
             </thead>
             <tbody id="tableBody">
@@ -46,7 +48,10 @@
                         data.results.forEach(obj => {
                                return tableData = tableData + `<tr><td>${obj.service_id}</td>
                                              <td>${obj.service_name}</td>
-                                             <td>${obj.price}</td></tr>`   
+                                             <td>${obj.price}</td>
+                                             <td><button style="background:darkred; border-radius: 2px; padding: 8px; border: 0; color: white; cursor: pointer;"><i class="fas fa-trash-alt icon trash-icon"></i></button></td>
+                                             </tr>
+                                             `   
                             });
                         const tableBody = document.getElementById('tableBody');
                         tableBody.innerHTML = tableData;
