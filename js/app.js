@@ -127,3 +127,38 @@ function actionAddAdmin() {
         window.location.href='../user.html';
     })
 }
+
+function actionDeleteUser(userid) {
+    fetch('http://carwash.eu-4.evennode.com/api/user?' + new URLSearchParams({userid: userid}), {
+        method: 'DELETE',
+    })
+    .then((res) => res.json())
+    .then((data) => {
+        alert(data.message);
+        window.location.href='../user.html';
+    })
+}
+
+function actionDeleteReport(plateno) {
+    console.log(plateno)
+    fetch('http://carwash.eu-4.evennode.com/api/report?' + new URLSearchParams({plateno: plateno}), {
+        method: 'DELETE',
+    })
+    .then((res) => res.json())
+    .then((data) => {
+        alert(data.message);
+        window.location.href='../report.html';
+    })
+}
+
+function actionDeleteService(serviceid) {
+    console.log(serviceid)
+    fetch('http://carwash.eu-4.evennode.com/api/service?' + new URLSearchParams({serviceid: serviceid}), {
+        method: 'DELETE',
+    })
+    .then((res) => res.json())
+    .then((data) => {
+        alert(data.message);
+        window.location.href='../service.html';
+    })
+}

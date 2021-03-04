@@ -38,7 +38,7 @@
                     <th>Phone Number</th>
                     <th>User Type</th>
                     <th>Delete</th>
-                    
+
                 </tr>
             </thead>
             <tbody id="tableBody">
@@ -51,7 +51,7 @@
                             return tableData = tableData + `<tr><td>${obj.names}</td>
                                                                 <td>${obj.phone_number}</td>
                                                                 <td>${obj.user_type}</td>
-                                                                <td><button style="background:darkred; border-radius: 2px; padding: 8px; border: 0; color: white; cursor: pointer;"><i class="fas fa-trash-alt icon trash-icon"></i></button></td>
+                                                                <td><button onclick="actionDeleteUser(${obj.user_id})" style="background:darkred; border-radius: 2px; padding: 8px; border: 0; color: white; cursor: pointer;"><i class="fas fa-trash-alt icon trash-icon"></i></button></td>
                                                             </tr>`   
                         });
                         const tableBody = document.getElementById('tableBody');

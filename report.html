@@ -52,13 +52,13 @@
                                                                    <td>${obj.car_mark}</td>
                                                                    <td>${obj.status}</td>
                                                                    <td>${obj.cleaner_name}</td>
-                                                                   <td><button style="background:darkred; border-radius: 2px; padding: 8px; border: 0; color: white; cursor: pointer;"><i class="fas fa-trash-alt icon trash-icon"></i></button></td>   
+                                                                   <td><button onclick="actionDeleteReport('${obj.plate_no}')" style="background:darkred; border-radius: 2px; padding: 8px; border: 0; color: white; cursor: pointer;"><i class="fas fa-trash-alt icon trash-icon"></i></button></td>   
                                                                 </tr>`   
                             });
                         const tableBody = document.getElementById('tableBody');
                         tableBody.innerHTML = tableData;
                     })
-                    
+
                 </script>
             </tbody>
         </table>
