@@ -175,6 +175,18 @@ color: #000000;
     background: #cfd1d1;
     cursor: pointer;
 }
+.btnGo{
+    height: 35.12px; 
+    background: #EEF3F3; 
+    border: 0; 
+    color: #193E4C; 
+    font-weight: bold;
+}
+.btnGo:hover{
+    background: #cfd1d1;
+    cursor: pointer;
+}
+
 table{
     width: 100%;
     border-collapse: collapse;

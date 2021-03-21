@@ -162,3 +162,23 @@ function actionDeleteService(serviceid) {
         window.location.href='../service.html';
     })
 }
+
+function getReportsByDate(){
+    const fromDate = document.getElementById('fromDate').value;
+    const toDate = document.getElementById('toDate').value;
+
+    axios.get(`http://carwash.eu-4.evennode.com/api/reportdate?fromDate=${fromDate}&toDate=${toDate}`)
+    .then((res) => {
+        let tableData = "";
+                        res.data.results.forEach(obj => {
+                               return tableData = tableData + `<tr><td>${obj.plate_no}</td>
+                                                                   <td>${obj.car_mark}</td>
+                                                                   <td>${obj.status}</td>
+                                                                   <td>${obj.cleaner_name}</td>
+                                                                   <td><button onclick="actionDeleteReport('${obj.plate_no}')" style="background:darkred; border-radius: 2px; padding: 8px; border: 0; color: white; cursor: pointer;"><i class="fas fa-trash-alt icon trash-icon"></i></button></td>   
+                                                                </tr>`   
+                            });
+                        const tableBody = document.getElementById('tableBody');
+                        tableBody.innerHTML = tableData;
+    })
+}
