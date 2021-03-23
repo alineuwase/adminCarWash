@@ -165,6 +165,20 @@ function actionDeleteService(serviceid) {
     })
 }
 
+function btnPrintReport() { 
+            const tableContents = document.getElementById("tReport");
+            const fromDate = document.getElementById("fromDate").value;
+            const toDate = document.getElementById("toDate").value;
+    
+            const a = window.open('', '', 'height=500, width=500'); 
+            a.document.write('<html>'); 
+            a.document.write(`<body > <h1>Car Wash Report</h1><h4>This is the report from ${fromDate} to ${toDate}</h4>`); 
+            a.document.write(tableContents); 
+            a.document.write('</body></html>'); 
+            a.document.close(); 
+            a.print(); 
+}
+
 function getReportsByDate(){
     const fromDate = document.getElementById('fromDate').value;
     const toDate = document.getElementById('toDate').value;
