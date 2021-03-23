@@ -171,7 +171,7 @@ function btnPrintReport() {
             const toDate = document.getElementById("toDate").value;
     
             const a = window.open('', '', 'height=500, width=500'); 
-            a.document.write('<html>'); 
+            a.document.write('<html><link rel="stylesheet" href="./styles/styles.css">'); 
             a.document.write(`<body > <h1>Car Wash Report</h1><h4>This is the report from ${fromDate} to ${toDate}</h4>`); 
             a.document.write(tableContents); 
             a.document.write('</body></html>'); 
