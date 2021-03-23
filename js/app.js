@@ -166,7 +166,7 @@ function actionDeleteService(serviceid) {
 }
 
 function btnPrintReport() { 
-            const tableContents = document.getElementById("tReport");
+            const tableContents = document.getElementById("tReport").innerHTML;
             const fromDate = document.getElementById("fromDate").value;
             const toDate = document.getElementById("toDate").value;
     
