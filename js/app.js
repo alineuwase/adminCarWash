@@ -108,11 +108,13 @@ function actionAddAdmin() {
     const names = document.getElementById('names').value;
     const telephone = document.getElementById('telephone').value;
     const password = document.getElementById('password').value;
-
+    const email = document.getElementById('email').value;
+    
     const data = {
         names: names,
         phoneNumber: telephone,
-        password: password
+        password: password,
+        email: email
     }
     fetch('http://carwash.eu-4.evennode.com/api/admin', {
         method: 'POST',
