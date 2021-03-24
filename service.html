@@ -33,7 +33,7 @@
         <table cellspacing="0" cellpadding="0">
             <thead>
                 <tr class="tableHeader">
-                    <th>Service Id</th>
+                
                     <th>Service Name</th>
                     <th>Price</th>
                     <th>Delete</th>
@@ -47,7 +47,7 @@
                         let tableData = "";
                         data.results.forEach(obj => {
                                return tableData = tableData + `<tr>
-<td>${obj.service_id}</td>
+
                                              <td>${obj.service_name}</td>
                                              <td>${obj.price}</td>
                                              <td><button onclick="actionDeleteService(${obj.service_id})" style="background:darkred; border-radius: 2px; padding: 8px; border: 0; color: white; cursor: pointer;"><i class="fas fa-trash-alt icon trash-icon"></i></button></td>
